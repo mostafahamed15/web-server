@@ -54,6 +54,22 @@ app.get('/weather', (req, res) => {
     })
 })
 
+//Handle error page when make undefined route
+app.get('*', (req, res) => {
+    res.render('notfound', {
+        errorMsg: "Page not found!",
+        name: "Mostafa"
+    })
+})
+
+//Handle sub route help page
+app.get('/help/*', (req, res) => {
+    res.render('notfound', {
+        errorMsg: "Help article not found!",
+        name: "Mostafa"
+    })
+})
+
 app.listen(3000, ()=>{
     console.log("Server is up on port 3000.")
 })
