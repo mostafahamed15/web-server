@@ -17,6 +17,21 @@ app.get('', (req, res) => {
         title: "Weather",
         name: "Mostafa"
     })
+});
+
+
+app.get('/about', (req, res) => {
+    res.render('aboutus', {
+        title: "About me",
+        name: "Mostafa"
+    })
+})
+
+app.get('/help', (req, res) => {
+    res.render('help', {
+        title: "Help",
+        helpText: "This is my help page"
+    })
 })
 
 
