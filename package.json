@@ -22,6 +22,7 @@
     "set-value": "^2.0.1",
     "minimist": "^0.2.1",
     "kind-of": "^6.0.3",
-    "handlebars": "^4.3.0"
+    "handlebars": "^4.3.0",
+    "dot-prop": "5.1.1"
   }
 }
